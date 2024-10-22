@@ -94,7 +94,7 @@ The model trains a token classification model using Hugging Face's transformers 
 
   - We implement a training loop with custom optimization strategies from the AdamW optimizer and learning rate schedulers.
  
-  - Training progress is logged using weights and biases via Wandb.
+  - Training progress is logged via Wandb.
  
 5. Model performance metrics like precision, recall, f1-score, and accuracy are computing during training and evaluation of epochs.
 
