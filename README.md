@@ -89,6 +89,8 @@ More detailed information about the winners and participants can be found [here]
   <img src="./img/dataset_raw.png" width="90%"/>
 </p>
 
+20 example unlabeled item titles from eBay Germany.
+
 - The 10,000 labeled item titles will be split into three groups:
 
   1. Training set (5,000 records)
