@@ -2,18 +2,19 @@
 
 - During my freshmen summer, my friend (James Ngai) and I tried our hand at eBay's 5th Annual University Challenge in the space of Machine Learning on an e-commerce dataset.
 
+<p float="left">
+  <img src="./img/pfp.png" width="45%"/>
+  <img src="./img/jook.png" width="45%"/>
+</p>
+
 - While the competition is primarily geared toward graduate students, including Ph.D., undergrad students can also participate, in teams of 1 to 5 students.
 
 - This year, we were asked to build a model that can accurately extract and label the named entities in the dataset of item titles on eBay.
 
 - Our team, `jookisthebest` placed 12th place out of 887 teams and 1439 participants.
 
-<p float="left">
-  <img src="./img/pfp.png" width="90%"/>
-</p>
-
-<p float="left">
-  <img src="./img/jook.png" width="90%"/>
+<p align="left">
+<img src="./img/rankings.png" width="90%"/>
 </p>
 
 ---
@@ -37,10 +38,6 @@ More detailed information about the winners and participants can be found [here]
 # The Model
 
 - Our team `jookisthebest` placed 12th out of 887 teams.
-
-<p align="center">
-<img src="./img/rankings.png" width="900"/>
-</p>
 
 - Incorporated Facebook's RoBERTa model to tokenize German.
 
