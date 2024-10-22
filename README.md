@@ -55,9 +55,13 @@ The objective of this challenge is to extract and label the aspects in the datas
 
   - Not all titles have all aspects, and figuring out which aspect is present for a given title is part of the challenge.
 
-# Evaluation
+The team with the highest weighted precision (recall and f1-score) on the test dataset wins.
 
+The weighted f1-score and its components are explained in more detail in the image below.
 
+<p float="left">
+  <img src="./img/f1.png" width="95%"/>
+</p>
 
 # The Model
 
@@ -92,7 +96,7 @@ The model trains a token classification model using Hugging Face's transformers 
  
   - Training progress is logged using weights and biases via Wandb.
  
-5. Model performance metrics like precision, recall, F1 score, and accuracy are computing during training and evaluation of epochs.
+5. Model performance metrics like precision, recall, f1-score, and accuracy are computing during training and evaluation of epochs.
 
   - Evaluation metrics are computed with the seqeval library.
     
