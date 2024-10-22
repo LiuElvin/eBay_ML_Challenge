@@ -55,6 +55,10 @@ The objective of this challenge is to extract and label the aspects in the datas
 
   - Not all titles have all aspects, and figuring out which aspect is present for a given title is part of the challenge.
 
+# Evaluation
+
+
+
 # The Model
 
 <p float="left">
