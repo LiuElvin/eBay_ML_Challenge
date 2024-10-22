@@ -78,25 +78,25 @@ In our model, we
 
 The model trains a token classification model using Hugging Face's transformers library. More specifically...
 
-  1. We utilize the datasets library to load and handle the dataset into Google Colab.
+1. We utilize the datasets library to load and handle the dataset into Google Colab.
  
-  2. Hugging Face's transformers library is then necessary to load a pre-trained token classification model.
+2. Hugging Face's transformers library is then necessary to load a pre-trained token classification model.
  
-  3. The AutoTokenizer class from the transformers library is employed to tokenize the dataset.
+3. The AutoTokenizer class from the transformers library is employed to tokenize the dataset.
  
-  4. The model is trained via PyTorch.
+4. The model is trained via PyTorch.
  
-    - We use the neural network operations.
+  1. We use the neural network operations.
 
-    - We implement a training loop with custom optimization strategies from the AdamW optimizer and learning rate schedulers.
+  2. We implement a training loop with custom optimization strategies from the AdamW optimizer and learning rate schedulers.
  
-    - Training progress is logged using weights and biases via Wandb.
+  3. Training progress is logged using weights and biases via Wandb.
  
-  5. Model performance metrics like precision, recall, F1 score, and accuracy are computing during training and evaluation of epochs.
+5. Model performance metrics like precision, recall, F1 score, and accuracy are computing during training and evaluation of epochs.
 
-     - Evaluation metrics are computed with the seqeval library.
+  - Evaluation metrics are computed with the seqeval library.
     
-  6. Training and evaluation data is then loaded and processed via PyTorch's DataLoader.
+6. Training and evaluation data is then loaded and processed via PyTorch's DataLoader.
 
 # Dataset
 
