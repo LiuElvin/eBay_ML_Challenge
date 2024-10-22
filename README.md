@@ -64,13 +64,15 @@ The objective of this challenge is to extract and label the aspects in the datas
 
 Above are 2 runs (1 successful and 1 failed) of our models on Google Colab.
 
+In our model, we
+
 - Incorporated Facebook A.I.'s RoBERTa model to tokenize German eBay listings.
 
-- Includes pre-processing of certain symbols to manually remove untranslatable text.
+- Included pre-processing of certain symbols to manually remove untranslatable text.
 
 - Setup Hugging Face and Wandb folders to store and freely assess performances of previous models.
 
-- The model trains a token classification model using Hugging Face's transformers library. More specifically...
+The model trains a token classification model using Hugging Face's transformers library. More specifically...
 
   1. We utilize the datasets library to load and handle the dataset into Google Colab.
  
