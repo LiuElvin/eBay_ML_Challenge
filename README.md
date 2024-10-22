@@ -9,7 +9,7 @@ During my freshmen summer, my friend (James Ngai) and I tried our hand at eBay's
 
 While the competition is primarily geared toward teams of 1 to 5 graduate students, including Ph.D., undergrad students can also participate.
 
-This year, we were asked to build a machine learning model that can accurately extract and label the named entities in the dataset of item titles on eBay.
+This year, we were asked to build an ML model that can accurately extract and label the named entities in the dataset of item titles on eBay.
 
 Most of our work was done on Google Colab, so the model in the `models` folder is just one of the many models we went through. There's a decent bit of sensitive information in the keys so that's the only model I'll have uploaded.
 
