@@ -11,7 +11,7 @@ While the competition is primarily geared toward teams of 1 to 5 graduate studen
 
 This year, we were asked to build a model that can accurately extract and label the named entities in the dataset of item titles on eBay.
 
-Our team, `jookisthebest` placed 12th place out of 887 teams and 1439 participants.
+Our team, `jookisthebest` placed **12th** place out of 887 teams and 1439 participants.
 
 <p align="left">
 <img src="./img/rankings.png" width="95%"/>
