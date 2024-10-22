@@ -1,16 +1,18 @@
 # eBay 2023 University Machine Learning Competition
 
-- My friend and I tried our hand at eBay's 5th Annual University Challenge in the space of Machine Learning on an e-commerce dataset.
+- My friend (James Ngai) and I tried our hand at eBay's 5th Annual University Challenge in the space of Machine Learning on an e-commerce dataset.
+
+- While the competition is primarily geared toward graduate students, including Ph.D., undergrad students can also participate.
 
 - This year, we were asked to build a model that can accurately extract and label the named entities in the dataset of item titles on eBay.
 
 - Our team, `jookisthebest` placed 12th place out of 887 teams and 1439 participants.
 
-<p float="center">
+<p float="left">
   <img src="./img/pfp.png" width="90%"/>
 </p>
 
-<p float="center">
+<p float="left">
   <img src="./img/jook.png" width="90%"/>
 </p>
 
