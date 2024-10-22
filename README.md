@@ -29,9 +29,27 @@ More detailed information about the winners and participants can be found [here]
 
 # Task
 
-...
+Named entity recognition (NER) is a fundamental task in Natural Language Processing (NLP) and one of the first stages in many language understanding tasks. It has drawn research attention for a few decades, and its importance has been well recognized in both academia and industry.
+While NER is applied in many different settings, for this challenge, we will only be using eBay listing titles for NER. A few examples of NER labeling of listing titles are shown below (these examples are in English to illustrate the concept, the challenge data will have German language listing titles).
+
+<p align="left">
+<img src="./img/rankings.png" width="95%"/>
+</p>
+
+- The extracted entities are also called aspects, and an aspect consists of the aspect name (“Brand name” for the first aspect in the last example above) and the aspect value (“NYX” for the same aspect in the same example above).
+
+- The objective of this challenge is to extract and label the aspects in the dataset of item titles listed on eBay.
+
+  - Not all titles have all aspects, and figuring out which aspect is present for a given title is part of the challenge.
 
 # The Model
+
+<p float="left">
+  <img src="./img/successful_run.png" width="52%"/>
+  <img src="./img/failed_run.png" width="45%"/>
+</p>
+
+Above are 2 runs (1 successful and 1 failed) of our models on Google Colab.
 
 - Incorporated Facebook A.I.'s RoBERTa model to tokenize German eBay listings.
 
