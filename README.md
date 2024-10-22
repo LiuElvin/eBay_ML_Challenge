@@ -27,6 +27,8 @@ More detailed information about the winners and participants can be found [here]
 
 ---
 
+# Background (Named Entity Recognition)
+
 # General Information
 
 - Build a model that can accurately extract and label the named entities in the dataset of item titles on eBay. Named Entities are the semantic strings/words/phrases that refer to people, brands, organizations, locations, styles, materials, patterns, product names, units of measure, clothing sizes, etc.
