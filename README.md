@@ -4,14 +4,21 @@
 
 - ...
 
+<p float="left">
+  <img src="./img/pfp.png" width="90%"/>
+</p>
+
+<p float="left">
+  <img src="./img/jook.png" width="90%"/>
+</p>
+
+---
+
 The link to the competition overview, specifications, and leaderboard can be found [here](https://eval.ai/web/challenges/challenge-page/2014/overview).
 
 More detailed information about the winners and participants can be found [here](https://innovation.ebayinc.com/tech/features/meet-the-winners-of-the-5th-ebay-university-machine-learning-challenge/).
 
-<p float="left">
-  <img src="./img/pfp.png" height="200"/>
-  <img src="./img/jook.png" height="200"/>
-</p>
+---
 
 # General Information
 
