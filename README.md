@@ -39,9 +39,7 @@ More detailed information about the winners and participants can be found [here]
 
 # The Challenge
 
-The data is from listings on eBay’s German site.
-
-We, the university student teams, need to use the provided data to solve a real-world e-commerce challenge.
+We, the university student teams, need to use the provided data (from eBay’s German site) to solve a real-world e-commerce challenge.
 
 While NER is applied in many different settings, for this challenge, NER is applied to eBay listing titles.
 
