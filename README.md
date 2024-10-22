@@ -27,45 +27,43 @@ More detailed information about the winners and participants can be found [here]
 
 ---
 
-
-# General Information
+# Task
 
 - Build a model that can accurately extract and label the named entities in the dataset of item titles on eBay. Named Entities are the semantic strings/words/phrases that refer to people, brands, organizations, locations, styles, materials, patterns, product names, units of measure, clothing sizes, etc.
 
 - Named Entity Recognition (NER) is the machine learning process of automatic labeling and extracting important named entities in a text that carry a particular meaning. In e-commerce, NER is used to process listing or product titles and descriptions, queries, and reviews, or wherever extraction of important data from raw text is desired.
 
-- The data is from listings on eBay’s German site.
-
 - Performance of the model for each aspect name is graded using weighted precision, recall and f1-score. The aspects will be weighted by their count in the quiz or test dataset. The final precision, recall and the final combined f1-score are calculated by adding the individual weighted aspect name f1-scores.
 
 # The Model
 
-- Our team `jookisthebest` placed 12th out of 887 teams.
+- Incorporated Facebook A.I.'s RoBERTa model to tokenize German eBay listings.
 
-- Incorporated Facebook's RoBERTa model to tokenize German.
+- Includes pre-processing of certain symbols to manually remove untranslatable text.
 
-- Includes some manual pre-processing so symbols can be understood.
+- Setup Hugging Face and Wandb folders to store and freely assess performances of previous models.
 
-- The original scripts are stored elsewhere for accessability and privacy reasons (HuggingFace and Wandb logins).
+- The model trains a token classification model using Hugging Face's transformers library. More specifically...
 
-- The model trains a token classification model using Hugging Face's Transformers library. Here's a more in-depth summary of what the code does:
-  1. The datasets library is used to load and handle the dataset.
+  1. We utilize the datasets library to load and handle the dataset into Google Colab.
+ 
+  2. Hugging Face's transformers library is then necessary to load a pre-trained token classification model.
+ 
+  3. The AutoTokenizer class from the transformers library is employed to tokenize the dataset.
+ 
+  4. The model is trained via PyTorch.
+ 
+    - We use the neural network operations.
 
-  2. Hugging Face's transformers library is utilized to load a pre-trained token classification model.
+    - We implement a training loop with custom optimization strategies from the AdamW optimizer and learning rate schedulers.
+ 
+    - Training progress is logged using weights and biases via Wandb.
+ 
+  5. Model performance metrics like precision, recall, F1 score, and accuracy are computing during training and evaluation of epochs.
 
-  3. The AutoTokenizer class from transformers is employed to tokenize the dataset.
-
-  4. The model is trained using PyTorch.
-    - PyTorch's torch library is used for neural network operations.
-    - The training loop is implemented with custom optimization strategies using AdamW optimizer and learning rate schedulers.
-    - Training progress is logged using weights & biases (wandb).
-
-  5. Model performance metrics like precision, recall, F1-score, and accuracy are computed during training and evaluation.
-    - Evaluation metrics are computed using the seqeval library.
-
-  6. Training and evaluation data are loaded and processed using PyTorch's DataLoader.
-
-  7. Experiment logging is performed using Weights & Biases (wandb).
+     - Evaluation metrics are computed with the seqeval library.
+    
+  6. Training and evaluation data is then loaded and processed via PyTorch's DataLoader.
 
 # Dataset
 
@@ -100,7 +98,7 @@ More detailed information about the winners and participants can be found [here]
 
 - My teamates, James Ngai, produced a majority of the coding portions utilizing PyTorch and Wandb.
 
-- We were both novices in the Machine Learning space, so most of my work consisted of experimentation of whatever features HuggingFace could provide.
+- We were both novices in the Machine Learning space, so most of my work consisted of experimentation of whatever features Hugging Face could provide.
 
 - I ended up testing the hyperparameters (epochs, learning rate, etc.) for our models, tweaking them based off the graphs provided by Wandb.
 
@@ -112,7 +110,7 @@ More detailed information about the winners and participants can be found [here]
 
 - Essentially every topic introduced during this project was new to me. I initially wasn't familiar with Machine Learning at all.
 
-- I learnt a lot of Python code, specifically those relating to Machine Learning libraries like PyTorch, Wandb, and HuggingFace.
+- I learnt a lot of Python code, specifically those relating to Machine Learning libraries like PyTorch, Wandb, and Hugging Face.
 
 - I gained increased familiarity with Neural Networks and their corresponding hyperparameters for tuning.
 
