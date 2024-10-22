@@ -102,7 +102,7 @@ The model trains a token classification model using Hugging Face's transformers 
     
 6. Training and evaluation data is then loaded and processed via PyTorch's DataLoader.
 
-<p float="right">
+<p float="left">
   <img src="./img/wandb_eval.png" width="25%"/>
 </p>
 
