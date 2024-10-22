@@ -27,18 +27,33 @@ More detailed information about the winners and participants can be found [here]
 
 ---
 
-# Task
+# Background
 
-Named entity recognition (NER) is a fundamental task in Natural Language Processing (NLP) and one of the first stages in many language understanding tasks. It has drawn research attention for a few decades, and its importance has been well recognized in both academia and industry.
-While NER is applied in many different settings, for this challenge, we will only be using eBay listing titles for NER. A few examples of NER labeling of listing titles are shown below (these examples are in English to illustrate the concept, the challenge data will have German language listing titles).
+- Named Entities are the semantic strings/words/phrases that refer to people, brands, organizations, locations, styles, materials, patterns, product names, units of measure, clothing sizes, etc.
+
+- Named Entity Recognition (NER) is the machine learning process of automatic labeling and extracting important named entities in a text that carry a particular meaning. In e-commerce, NER is used to process listing or product titles and descriptions, queries, and reviews, or wherever extraction of important data from raw text is desired.
+
+- At eBay, NER is applied in a variety of applications, in particular for extracting aspects from listings (seller-facing context), and from search queries (buyer-facing context).
+
+  - In both of these contexts NER plays a crucial role to bridge unstructured text data to structured data. This challenge focuses on extraction from listings.
+
+# The Challenge
+
+The data is from listings on eBay’s German site.
+
+We, the university student teams, need to use the provided data to solve a real-world e-commerce challenge.
+
+While NER is applied in many different settings, for this challenge, NER is applied to eBay listing titles.
+
+A few examples of NER labeling of listing titles are shown below (these examples are in English to illustrate the concept, the challenge data will have German language listing titles).
 
 <p align="left">
-<img src="./img/rankings.png" width="95%"/>
+<img src="./img/instructions.png" width="95%"/>
 </p>
 
-- The extracted entities are also called aspects, and an aspect consists of the aspect name (“Brand name” for the first aspect in the last example above) and the aspect value (“NYX” for the same aspect in the same example above).
+The extracted entities are also called aspects, and an aspect consists of the aspect name (“Brand name” for the first aspect in the last example above) and the aspect value (“NYX” for the same aspect in the same example above).
 
-- The objective of this challenge is to extract and label the aspects in the dataset of item titles listed on eBay.
+The objective of this challenge is to extract and label the aspects in the dataset of item titles listed on eBay.
 
   - Not all titles have all aspects, and figuring out which aspect is present for a given title is part of the challenge.
 
