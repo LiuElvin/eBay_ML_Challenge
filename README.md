@@ -45,7 +45,7 @@ While NER is applied in many different settings, for this challenge, we will onl
 # The Model
 
 <p float="left">
-  <img src="./img/successful_run.png" width="52%"/>
+  <img src="./img/successful_run.png" width="45%"/>
   <img src="./img/failed_run.png" width="45%"/>
 </p>
 
