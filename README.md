@@ -66,8 +66,8 @@ The weighted f1-score and its components are explained in more detail in the ima
 # The Model
 
 <p float="left">
-  <img src="./img/successful_run.png" width="95%"/>
-  <img src="./img/failed_run.png" width="95%"/>
+  <img src="./img/successful_run.png" width="45%"/>
+  <img src="./img/failed_run.png" width="45%"/>
 </p>
 
 Above are 2 runs (1 successful and 1 failed) of our models on Google Colab.
