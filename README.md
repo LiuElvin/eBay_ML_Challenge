@@ -92,8 +92,8 @@ Above are 2 runs (1 successful and 1 failed) of our models on Google Colab.
   - Each item title had a unique identifier (a record number).
  
 <p float="left">
-  <img src="./img/dataset_raw.png" width="45%"/>
-  <img src="./img/dataset_translated.png" width="45%"/>
+  <img src="./img/dataset_raw.png" width="95%"/>
+  <img src="./img/dataset_translated.png" width="95%"/>
 </p>
 
 - The above image depicts 20 example unlabeled item titles from eBay Germany.
