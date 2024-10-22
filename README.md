@@ -86,11 +86,11 @@ The model trains a token classification model using Hugging Face's transformers 
  
 4. The model is trained via PyTorch.
  
-  1. We use the neural network operations.
+  - We use the neural network operations.
 
-  2. We implement a training loop with custom optimization strategies from the AdamW optimizer and learning rate schedulers.
+  - We implement a training loop with custom optimization strategies from the AdamW optimizer and learning rate schedulers.
  
-  3. Training progress is logged using weights and biases via Wandb.
+  - Training progress is logged using weights and biases via Wandb.
  
 5. Model performance metrics like precision, recall, F1 score, and accuracy are computing during training and evaluation of epochs.
 
