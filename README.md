@@ -7,7 +7,7 @@
   <img src="./img/jook.png" width="45%"/>
 </p>
 
-- While the competition is primarily geared toward graduate students, including Ph.D., undergrad students can also participate, in teams of 1 to 5 students.
+- While the competition is primarily geared toward teams of 1 to 5 graduate students, including Ph.D., undergrad students can also participate.
 
 - This year, we were asked to build a model that can accurately extract and label the named entities in the dataset of item titles on eBay.
 
