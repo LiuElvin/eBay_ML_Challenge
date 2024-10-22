@@ -80,20 +80,19 @@ More detailed information about the winners and participants can be found [here]
   - Each item title had a unique identifier (a record number).
  
 <p float="left">
-  <img src="./img/dataset_raw.png" width="90%"/>
+  <img src="./img/dataset_raw.png" width="45%"/>
+  <img src="./img/dataset_translated.png" width="45%"/>
 </p>
 
 - The above image depicts 20 example unlabeled item titles from eBay Germany.
+
+  - The left is the raw data, while the right is the model's predicted labels.
 
 - The 10,000 labeled item titles will be split into three groups:
 
   1. Training set (5,000 records)
   2. Quiz set (2,500 records)
   3. Test set (2,500 records)
-
-<p float="left">
-  <img src="./img/dataset_translated.png" width="90%"/>
-</p>
 
 ---
 
