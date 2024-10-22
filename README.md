@@ -2,7 +2,7 @@
 
 - My friend (James Ngai) and I tried our hand at eBay's 5th Annual University Challenge in the space of Machine Learning on an e-commerce dataset.
 
-- While the competition is primarily geared toward graduate students, including Ph.D., undergrad students can also participate.
+- While the competition is primarily geared toward graduate students, including Ph.D., undergrad students can also participate, in teams of 1 to 5 students.
 
 - This year, we were asked to build a model that can accurately extract and label the named entities in the dataset of item titles on eBay.
 
