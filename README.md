@@ -3,7 +3,7 @@
 - During my freshmen summer, my friend (James Ngai) and I tried our hand at eBay's 5th Annual University Challenge in the space of Machine Learning on an e-commerce dataset.
 
 <p float="left">
-  <img src="./img/pfp.png" width="54%"/>
+  <img src="./img/pfp.png" width="52%"/>
   <img src="./img/jook.png" width="45%"/>
 </p>
 
