@@ -27,7 +27,6 @@ More detailed information about the winners and participants can be found [here]
 
 ---
 
-# Background (Named Entity Recognition)
 
 # General Information
 
@@ -85,6 +84,10 @@ More detailed information about the winners and participants can be found [here]
   - We were also provided the set of aspect names that should be extracted from each item title.
 
   - Each item title had a unique identifier (a record number).
+ 
+<p float="left">
+  <img src="./img/dataset_raw.png" width="90%"/>
+</p>
 
 - The 10,000 labeled item titles will be split into three groups:
 
