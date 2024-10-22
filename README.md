@@ -14,7 +14,7 @@
 - Our team, `jookisthebest` placed 12th place out of 887 teams and 1439 participants.
 
 <p align="left">
-<img src="./img/rankings.png" width="90%"/>
+<img src="./img/rankings.png" width="95%"/>
 </p>
 
 ---
