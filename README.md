@@ -1,6 +1,6 @@
 # eBay 2023 University Machine Learning Competition
 
-- My friend (James Ngai) and I tried our hand at eBay's 5th Annual University Challenge in the space of Machine Learning on an e-commerce dataset.
+- During my freshmen summer, my friend (James Ngai) and I tried our hand at eBay's 5th Annual University Challenge in the space of Machine Learning on an e-commerce dataset.
 
 - While the competition is primarily geared toward graduate students, including Ph.D., undergrad students can also participate, in teams of 1 to 5 students.
 
@@ -88,21 +88,22 @@ The 10 million unlabeled title set and the training set is intended for particip
 
 # Contributions
 
-- My teammate, James Ngai, did most of the coding portions for PyTorch and Wandb.
+- My teamates, James Ngai, produced a majority of the coding portions utilizing PyTorch and Wandb.
 
-- We were both novices at ML theory, so most of my work was just experimentation with whatever features HuggingFace could provide for Neural Networks.
+- We were both novices in the Machine Learning space, so most of my work consisted of experimentation of whatever features HuggingFace could provide.
 
-- I ended up testing the models and modifying hyperparameters based off graphs provided in Wandb.
+- I ended up testing the hyperparameters (epochs, learning rate, etc.) for our models, tweaking them based off the graphs provided by Wandb.
 
-- Also set up our cloud services for gpu training.
+- I also set up cloud services like AWS and Google Cloud for model training on GPUs.
+
+- The translation task would've been impossible without Facebook A.I.'s RoBERTa multilingual model. Link [here](https://huggingface.co/FacebookAI/xlm-roberta-large-finetuned-conll03-english).
 
 # Learning Outcomes
 
-- Essentially everything was new here. I initially wasn't that familiar with ML at all, from general concepts to coding in the Python packages given.
+- Essentially every topic introduced during this project was new to me. I initially wasn't familiar with Machine Learning at all.
 
-- Increased familiarity with Neural Networks and their hyperparameters.
+- I learnt a lot of Python code, specifically those relating to Machine Learning libraries like PyTorch, Wandb, and HuggingFace.
 
-- Increased familiarity with HuggingFace, PyTorch, and Wandb.
-  - Particularly HuggingFace, as the API was something entirely foreign to me beforehand.
+- I gained increased familiarity with Neural Networks and their corresponding hyperparameters for tuning.
 
-- Use of Google Cloud and AWS for model training.
+- Learnt to use Google Cloud and AWS for model training (also a lot of back and forth emails with HR for increased GPU usage limits).
