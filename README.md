@@ -102,6 +102,10 @@ The model trains a token classification model using Hugging Face's transformers 
     
 6. Training and evaluation data is then loaded and processed via PyTorch's DataLoader.
 
+<p float="left">
+  <img src="./img/wandb_eval.png" width="95%"/>
+</p>
+
 # Dataset
 
 - Reflecting eBay’s international character, the data is from a non-English site.
