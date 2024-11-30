@@ -1,6 +1,4 @@
-# <ins>Project 1</ins>
-
-## eBay 2023 University Machine Learning Competition ([Repo Link](https://github.com/LiuElvin/eBay_ML_Challenge/tree/main))
+# eBay 2023 University Machine Learning Competition
 
 ## May 2023 - December 2023
 
@@ -41,9 +39,9 @@ Our team, **jookisthebest**, placed **12th place** out of **887 teams** and 1439
 
 Files for my [Project 1 repository](https://github.com/LiuElvin/eBay_ML_Challenge/tree/main).
 
-- [`./models`](https://github.com/LiuElvin/eBay_ML_Challenge/tree/main/models) includes code for the XLM-RoBERTa model.
+- [`./models`](./models) includes code for the XLM-RoBERTa model.
 
-*Note:* Most of the `Python` coding for this project was conducted on Google Colab. The model provided in the [`./models`](https://github.com/LiuElvin/eBay_ML_Challenge/tree/main/models) folder represents just one of the many machine learning models developed during the competition. Due to the need to redact sensitive information, such as password keys, before uploading the code to GitHub, I have only included example code for the XLM-RoBERTa model. This model serves as a representative example of our later submissions, as the code structure had become fairly streamlined by the end of the competition.
+*Note:* Most of the `Python` coding for this project was conducted on Google Colab. The model provided in the [`./models`](./models) folder represents just one of the many machine learning models developed during the competition. Due to the need to redact sensitive information, such as password keys, before uploading the code to GitHub, I have only included example code for the XLM-RoBERTa model. This model serves as a representative example of our later submissions, as the code structure had become fairly streamlined by the end of the competition.
 
 ## Background
 
