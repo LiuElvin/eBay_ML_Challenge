@@ -1,158 +1,181 @@
-# eBay 2023 University Machine Learning Competition
+# <ins>Project 1</ins>
 
-During my freshmen summer, my friend (James Ngai) and I tried our hand at eBay's 5th Annual University Challenge in the space of Machine Learning on an e-commerce dataset.
+## eBay 2023 University Machine Learning Competition ([Repo Link](https://github.com/LiuElvin/eBay_ML_Challenge/tree/main))
 
-<p float="left">
-  <img src="./img/pfp.png" width="52%"/>
-  <img src="./img/jook.png" width="45%"/>
+## May 2023 - December 2023
+
+---
+
+### Summary
+
+In the summer of my freshman year, my friend, [James Ngai](https://www.linkedin.com/in/ngai-james), and I competed under the team name **jookisthebest** at eBay's 5th Annual University Challenge in the space of Machine Learning on an e-commerce dataset. The competition primarily targets master's and PhD students, however undergraduate students were also encouraged to participate (as long as we had a team of 1 to 5 people).
+
+<p align="center">
+  <img src="./img/pfp.png" width="48.25%"/>
+  <img src="./img/jook.png" width="41.75%"/>
 </p>
 
-While the competition is primarily geared toward teams of 1 to 5 graduate students, including Ph.D., undergrad students can also participate.
+The competition asked us to build a machine learning model that could accurately extract and label the named entities in the dataset of item titles on eBay's German site.
 
-This year, we were asked to build an ML model that can accurately extract and label the named entities in the dataset of item titles on eBay.
+Each team's submitted models were evaluated using the test dataset, with the team achieving the highest weighted f1-score (indicating the best predictions) on this dataset declared the winner. The quiz dataset was used for leaderboard scoring. Further details about the weighted f1-score are provided here:
 
-Most of our work was done on Google Colab, so the model in the `models` folder is just one of the many models we went through. There's a decent bit of sensitive information in the keys so that's the only model I'll have uploaded.
+<p align="center">
+  <img src="./img/f1.png" width="90%"/>
+</p>
 
-Our team, `jookisthebest` placed **12th place** out of **887 teams** and 1439 participants.
+Our team, **jookisthebest**, placed **12th place** out of **887 teams** and 1439 participants. The final leaderboard results are shown below:
 
-<p align="left">
-<img src="./img/rankings.png" width="95%"/>
+<p align="center">
+  <img src="./img/rankings.png" width="80%"/>
 </p>
 
 ---
 
-The link to the competition overview, specifications, and leaderboard can be found [here](https://eval.ai/web/challenges/challenge-page/2014/overview).
+## Links
 
-More detailed information about the winners and participants can be found [here](https://innovation.ebayinc.com/tech/features/meet-the-winners-of-the-5th-ebay-university-machine-learning-challenge/).
+- The competition overview, specifications, and leaderboard can all be found [here](https://eval.ai/web/challenges/challenge-page/2014/overview)
 
----
+- More detailed information regarding the participants and winners can be found at the [link](https://innovation.ebayinc.com/tech/features/meet-the-winners-of-the-5th-ebay-university-machine-learning-challenge/)
 
-# Background
+## Files
 
-- Named Entities are the semantic strings/words/phrases that refer to people, brands, organizations, locations, styles, materials, patterns, product names, units of measure, clothing sizes, etc.
+Files for my [Project 1 repository](https://github.com/LiuElvin/eBay_ML_Challenge/tree/main).
 
-- Named Entity Recognition (NER) is the machine learning process of automatic labeling and extracting important named entities in a text that carry a particular meaning. In e-commerce, NER is used to process listing or product titles and descriptions, queries, and reviews, or wherever extraction of important data from raw text is desired.
+- [`./models`](https://github.com/LiuElvin/eBay_ML_Challenge/tree/main/models) includes code for the XLM-RoBERTa model.
 
-- At eBay, NER is applied in a variety of applications, in particular for extracting aspects from listings (seller-facing context), and from search queries (buyer-facing context).
+*Note:* Most of the `Python` coding for this project was conducted on Google Colab. The model provided in the [`./models`](https://github.com/LiuElvin/eBay_ML_Challenge/tree/main/models) folder represents just one of the many machine learning models developed during the competition. Due to the need to redact sensitive information, such as password keys, before uploading the code to GitHub, I have only included example code for the XLM-RoBERTa model. This model serves as a representative example of our later submissions, as the code structure had become fairly streamlined by the end of the competition.
 
-  - In both of these contexts NER plays a crucial role to bridge unstructured text data to structured data. This challenge focuses on extraction from listings.
+## Background
 
-# The Challenge
+Named Entities are the semantic strings / words / phrases that refer to people, brands, organizations, locations, styles, materials, patterns, product names, units of measure, clothing sizes, etc.
 
-We, the university student teams, need to use the provided data (from eBay’s German site) to solve a real-world e-commerce challenge.
+Named Entity Recognition (NER) is the machine learning process of automatic labeling and extracting important named entities in a text that carry a particular meaning. In e-commerce, NER is used to process listing or product titles and descriptions, queries, and reviews, or wherever extraction of important data from raw text is desired. At eBay, NER is applied in a variety of applications, in particular for extracting aspects from listings (seller-facing context), and from search queries (buyer-facing context). In both of these contexts NER plays a crucial role to bridge unstructured text data to structured data.
 
-While NER is applied in many different settings, for this challenge, NER is applied to eBay listing titles.
+For this challenge, eBay listing titles are used for NER. A few examples of NER labeling of listing titles are shown below (these examples are in English to illustrate the concept, the challenge data used German language listing titles).
 
-A few examples of NER labeling of listing titles are shown below (these examples are in English to illustrate the concept, the challenge data will have German language listing titles).
-
-<p align="left">
-<img src="./img/instructions.png" width="95%"/>
+<p align="center">
+  <img src="./img/instructions.png" width="50%"/>
 </p>
 
-The extracted entities are also called aspects, and an aspect consists of the aspect name (“Brand name” for the first aspect in the last example above) and the aspect value (“NYX” for the same aspect in the same example above).
+Extracted entities, also called aspects, consist of the aspect name (“Brand name” for the first aspect in the last example above) and the aspect value (“NYX” for the same aspect in the same example above). The objective of this challenge is to extract and label the aspects in the dataset of item titles listed on eBay. Not all titles have all aspects, and figuring out which aspect is present for a given title is a significant part of the challenge.
 
-The objective of this challenge is to extract and label the aspects in the dataset of item titles listed on eBay.
+## Dataset
 
-  - Not all titles have all aspects, and figuring out which aspect is present for a given title is part of the challenge.
+The dataset consists of 10 million randomly selected unlabeled item titles from eBay Germany, all of which are from “Athletic Shoes” categories.
 
-The team with the highest weighted precision (recall and f1-score) on the test dataset wins.
+- Among these item titles there are 10,000 labeled item titles
 
-The weighted f1-score and its components are explained in more detail in the image below.
+- The set of aspect names that should be extracted from each item title is also provided
 
-<p float="left">
-  <img src="./img/f1.png" width="95%"/>
+- Each item title contains a unique identifier (a record number)
+
+The 10,000 labeled item titles will be split into three groups:
+
+1. Training set (5,000 records)
+2. Quiz set (2,500 records)
+3. Test set (2,500 records)
+ 
+<p align="center">
+  <img src="./img/dataset_raw.png" width="70%"/>
 </p>
 
-# The Model
+<p align="center">
+  <img src="./img/dataset_translated.png" width="70%"/>
+</p>
 
-<p float="left">
+20 unlabeled item titles from eBay Germany are pictured above.
+
+- The top image depicts raw quiz data
+
+- The bottom image depicts a model's predicted labels
+
+## The Model
+
+Our project involves training a token classification model using Hugging Face's transformers library and other key tools. Below is a structured outline of the approach:
+
+### Components -
+
+**1. Tokenizing German eBay Listings**
+
+- Incorporated Facebook A.I.'s RoBERTa model to tokenize German eBay listings effectively
+
+- Pre-processed symbols to manually remove untranslatable text
+
+**2. Performance Tracking and Storage**
+
+- Set up Hugging Face and Wandb integrations to store and track model performance for easy evaluation of past experiments
+
+<p align="center">
   <img src="./img/successful_run.png" width="45%"/>
   <img src="./img/failed_run.png" width="45%"/>
 </p>
 
-Above are 2 runs (1 successful and 1 failed) of our models on Google Colab.
+Above are 2 sample runs (1 successful, 1 unsuccessful) of the training loop on Google Colab.
 
-In our model, we
+### Workflow -
 
-- Incorporated Facebook A.I.'s RoBERTa model to tokenize German eBay listings.
+**1. Dataset Handling**
 
-- Included pre-processing of certain symbols to manually remove untranslatable text.
+- Used the datasets library from Hugging Face to load, manage, and preprocess the dataset directly in Google Colab
 
-- Setup Hugging Face and Wandb folders to store and freely assess performances of previous models.
+**2. Loading Pre-trained Token Classification Model**
 
-The model trains a token classification model using Hugging Face's transformers library. More specifically...
+- Loaded a pre-trained model using the transformers library for token classification tasks
 
-1. We utilize the datasets library to load and handle the dataset into Google Colab.
- 
-2. Hugging Face's transformers library is then necessary to load a pre-trained token classification model.
- 
-3. The AutoTokenizer class from the transformers library is employed to tokenize the dataset.
- 
-4. The model is trained via PyTorch.
- 
-  - We use the neural network operations.
+- Tokenized the dataset with the AutoTokenizer class
 
-  - We implement a training loop with custom optimization strategies from the AdamW optimizer and learning rate schedulers.
- 
-  - Training progress is logged via Wandb.
- 
-5. Model performance metrics like precision, recall, f1-score, and accuracy are computing during training and evaluation of epochs.
+**3. Model Training**
 
-  - Evaluation metrics are computed with the seqeval library.
-    
-6. Training and evaluation data is then loaded and processed via PyTorch's DataLoader.
+- Trained the model using PyTorch, employing:
 
-<p float="left">
-  <img src="./img/wandb_eval.png" width="25%"/>
+  - Custom optimization with the AdamW optimizer
+  
+  - Learning rate schedulers for better convergence
+  
+- Training progress and metrics were logged in Wandb
+
+**4. Performance Metrics**
+
+- Computed evaluation metrics such as precision, recall, f1-score, and accuracy during training and at the end of each epoch
+
+- Used the seqeval library to calculate token-level performance metrics
+
+**5. Data Preparation**
+
+- Loaded and processed training and evaluation datasets using PyTorch’s DataLoader class
+
+This setup allowed us to efficiently train and evaluate the model while maintaining detailed performance logs for iteration and improvement
+
+Below is a Wandb performance graph for step size.
+
+<p align="center">
+  <img src="./img/wandb_eval.png" width="40%"/>
 </p>
-
-# Dataset
-
-- Reflecting eBay’s international character, the data is from a non-English site.
-
-- The data set consists of 10 million randomly selected unlabeled item titles from eBay Germany, all of which are from “Athletic Shoes” categories.
-
-  - Among these item titles there are 10,000 labeled item titles.
-
-  - We were also provided the set of aspect names that should be extracted from each item title.
-
-  - Each item title had a unique identifier (a record number).
- 
-<p float="left">
-  <img src="./img/dataset_raw.png" width="45%"/>
-  <img src="./img/dataset_translated.png" width="45%"/>
-</p>
-
-- The above image depicts 20 example unlabeled item titles from eBay Germany.
-
-  - The left is the raw data, while the right is the model's predicted labels.
-
-- The 10,000 labeled item titles will be split into three groups:
-
-  1. Training set (5,000 records)
-  2. Quiz set (2,500 records)
-  3. Test set (2,500 records)
 
 ---
 
-# Contributions
+## Contributions
 
-- My teamates, James Ngai, produced a majority of the coding portions utilizing PyTorch and Wandb.
+- My teammate, James Ngai, performed pre-processing for indecipherable and unrecognizeable symbols
 
-- We were both novices in the Machine Learning space, so most of my work consisted of experimentation of whatever features Hugging Face could provide.
+- James also produced a majority of the code chunks involving PyTorch and Wandb
 
-- I ended up testing the hyperparameters (epochs, learning rate, etc.) for our models, tweaking them based off the graphs provided by Wandb.
+- Because we were both initially novices in the machine learning space, most of my work consisted of experimenting with the Hugging Face library and implementing the training loop
 
-- I also set up cloud services like AWS and Google Cloud for model training on GPUs.
+- To train models on GPUs, I set up multiple AWS and Google Cloud cloud service accounts
 
-- The translation task would've been impossible without Facebook A.I.'s RoBERTa multilingual model. Link [here](https://huggingface.co/FacebookAI/xlm-roberta-large-finetuned-conll03-english).
+- I tested the hyperparameters (epochs, learning rate, etc.) for our machine learning models, tweaking values based off the trends shown by the Wandb performance graphs
 
-# Learning Outcomes
+- Facebook A.I.'s RoBERTa multilingual model provided both token classification and translation for our final submission
 
-- Essentially every topic introduced during this project was new to me. I initially wasn't familiar with Machine Learning at all.
+  - A link to the model can be found [here](https://huggingface.co/FacebookAI/xlm-roberta-large-finetuned-conll03-english)
 
-- I learnt a lot of Python code, specifically those relating to Machine Learning libraries like PyTorch, Wandb, and Hugging Face.
+## Learning Outcomes
 
-- I gained increased familiarity with Neural Networks and their corresponding hyperparameters for tuning.
+- Implemented `Python` code, particularly from machine learning libraries such as PyTorch, Wandb, and Hugging Face
 
-- Learnt to use Google Cloud and AWS for model training (also a lot of back and forth emails with HR for increased GPU usage limits).
+- Utilized theoretical machine learning concepts to optimize hyperparameter tuning
+
+- Leveraged and set up cloud services like AWS and Google Cloud for model training
+
+- Learnt the under the hood mechanisms behind neural networks
