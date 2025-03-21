@@ -147,7 +147,7 @@ This setup allowed us to efficiently train and evaluate the model while maintain
 Below is a Wandb performance graph for step size.
 
 <p align="center">
-  <img src="./img/wandb_eval.png" width="40%"/>
+  <img src="./img/wandb_eval.jpg" width="40%"/>
 </p>
 
 ---
